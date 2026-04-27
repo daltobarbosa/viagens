@@ -1,10 +1,24 @@
+.offers{
+  margin-bottom: 104px;
+}
+
 .offers-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
 }
-.card {
+.offers-cards .card {
+  color: var(--text-secondary-color);
+  background-color: black;
+  width: 312px;
+  height: 280px;
+  box-sizing: border-box;
+  padding: 24px 16px;
+  border-radius: 16px;
+  text-align: center;
+}
+.offers-cards .card {
   color: var(--text-secondary-color);
   width: 312px;
   height: 288px;
@@ -13,41 +27,41 @@
   border-radius: 16px;
   text-align: center;
 }
-.card header {
+.offers-cards .card header {
   display: block;
   background-color: transparent;
   position: static;
   padding: 0;
   margin-bottom: 24px;
 }
-.card header p {
+.offers-cards .card header p {
   font-size: 20px;
   font-weight: var(--text-weight);
 }
-.card header h3 {
+.offers-cards   .card header h3 {
   font-size: 40px;
   font-weight: var(--title-weight);
   margin: 8px 0 0;
 }
-.card header span {
+.offers-cards .card header span {
   font-size: 32px;
   margin-top: 24px;
   display: inline-block;
 }
 
-.card.corona {
+.offers-cards .card.corona {
   background: url(../img/bg-\ card-corona.jpg) no-repeat;
   background-size: cover;
 }
-.card.twilight-town {
+.offers-cards .card.twilight-town {
   background: url(../img/bg-card-twilight-town.jpg) no-repeat;
   background-size: cover;
 }
-.card.arendelle {
+.offers-cards .card.arendelle {
   background: url(../img/bg-card-arendelle.jpg) no-repeat;
   background-size: cover;
 }
-.card.san-fransokyo {
+.offers-cards .card.san-fransokyo {
   background: url(../img/bg-card-san-frasokyo.jpg) no-repeat;
   background-size: cover;
 }
@@ -62,28 +76,28 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .card {
+  .offers-cards .card {
     width: 420px;
     height: 308px;
   }
 }
 
-.card header h3 {
+.offers-cards .card header h3 {
   font-size: 48px;
 }
-.card header span {
+.offers-cards .card header span {
   font-size: 40px;
 }
 
 @media screen and (min-width: 1440px) {
-  .card {
+  .offers-cards .card {
     width: 588px;
   }
 }
 
 @media screen and (min-width: 1920px) {
-    .offers-cards{
-        width: 1250px;
-        margin: 0 auto;
-    }
+  .offers-cards {
+    width: 1250px;
+    margin: 0 auto;
+  }
 }
