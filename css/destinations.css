@@ -1,7 +1,59 @@
-.destinations .item header {
-  display: block;
-  background-color: transparent;
-  position: static;
-  padding: 0;
+.destinations {
+  width: 312px;
+  margin: 0 auto;
+}
+.destination-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.destinations .item .img-item {
+  width: 100%;
+  height: 368px;
+}
+.destinations .item.torre .img-item {
+  background: url(../img/torre-mobile.jpg);
+  background-size: cover;
+}
+.destinations .item.vilarejo .img-item {
+  background: url(../img/vilarejo-mobile.jpg);
+  background-size: cover;
+}
+
+.destinations .item header h4 {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  margin: 24px;
+}
+.destinations .item p {
+  font-size: 20px;
+  font-weight: var(--title-weight);
+  line-height: 32px;
   margin-bottom: 24px;
+}
+.destinations .button {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .destinations {
+    width: 648px;
+  }
+  destinations .item .img-item {
+    width: 100%;
+    height: 452px;
+  }
+  .destinations .item.torre .img-item {
+    background: url(../img/torre-tablet-desk.png);
+    background-size: cover;
+  }
+  .destinations .item.vilarejo .img-item {
+    background: url(../img/vilarejo-tablet-desk.jpg);
+    background-size: cover;
+  }
+  .destinations .button {
+    width: 280px;
+  }
 }
