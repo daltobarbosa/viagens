@@ -19,14 +19,9 @@
 }
 
 .destinations .item header h4 {
-  font-size: 28px;
-  font-weight: var(--title-weight);
   margin: 24px;
 }
 .destinations .item p {
-  font-size: 20px;
-  font-weight: var(--title-weight);
-  line-height: 32px;
   margin-bottom: 24px;
 }
 .destinations .button {
